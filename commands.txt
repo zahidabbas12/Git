@@ -43,15 +43,3 @@ Git Configurations:
 
 Setting up global configuration: git config --global user.name "Name"
 git config --global user.email "email@example.com"
-Collaborative Workflows:
-
-Forking and Pull Requests (if using platforms like GitHub or GitLab).
-Git Aliases:
-
-Creating shortcuts for common commands: git config --global alias.co checkout
-Git Hooks:
-
-Basic overview of hooks like pre-commit and post-commit for custom automation.
-Useful Tools and Integrations:
-
-Mention tools like Git GUIs (e.g., GitKraken, Sourcetree) and integrations with IDEs.
