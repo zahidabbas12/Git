@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Git</title>
+    <style>
+        body {
+            font-family: Comic Sans, cursive;
+            /* Comic Sans as primary, fallback to cursive */
+            text-align: center;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        ol {
+            list-style: decimal;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        /* Optional: Add code for interactive elements or visual aids */
+    </style>
+</head>
+
+<body>
+    <h1>Learn Git - A Step-by-Step Guide</h1>
+
+     <p>This guide will walk you through the process of learning Git, from installation to committing your changes.</p>
+    <ol>
+        <li>**Installation:** Download and install Git for your operating system. You can find official installers on
+            the Git SCM website: https://git-scm.com/downloads</li>
+        <li>**Basic Configuration:** Open a terminal window and run the following commands to set your username and
+            email address (replace with your details):<br>
+            ```bash
+            git config --global user.name "Your Name"
+            git config --global user.email "[email address removed]"
+            ```
+        </li>
+        <li>**Creating a Repository:** Navigate to your project directory in the terminal and initialize a new Git
+            repository using the command:<br>
+            ```bash
+            git init
+            ```
+            This creates a hidden folder called ".git" which stores all Git-related information.
+        </li>
+        <li>**Adding Files:** Use the `git add` command followed by the filename(s) to stage them for version control.
+            Example:<br>
+            ```bash
+            git add index.html styles.css
+            ```
+            You can also use wildcards like `git add *` to add all untracked files in the current directory.
+        </li>
+        <li>**Committing Changes:** Once you've added files, create a snapshot of the current state with a commit
+            message using `git commit -m "Your commit message"`. The message describes the changes you made.
+        </li>
+        <li>**Understanding the Working Directory, Staging Area, and Repository:** These are key Git concepts. The
+            working directory is where your project files reside. The staging area holds files prepared for the next
+            commit. The repository stores all historical versions of your project.
+        </li>
+        <li>**Exploring Git Commands:** Learn essential commands like `git status`, `git log`, `git diff`, `git
+            checkout`, and `git branch` to manage your repository, view commit history, compare changes, and work on
+            different versions (branches).
+        </li>
+        <li>**Remote Repositories (Optional):** Connect your local repository to a remote hosting service like GitHub or
+            GitLab. This allows collaboration and version control across teams. There are additional steps involved for
+            setting this up.
+        </li>
+        <li>**Practice and Learn More:** The best way to learn Git is by practicing! Start with small projects and
+            gradually explore advanced features. Resources like the official Git documentation and interactive tutorials
+            can be helpful: https://git-scm.com/doc</li>
+    </ol>
+</body>
+
+</html>
