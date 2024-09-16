@@ -1,0 +1,57 @@
+Basic Git Commands:
+
+git init: Initialize a new Git repository.
+git clone [url]: Clone a repository from a URL.
+git status: Check the status of changes in the working directory.
+git add [file]: Add files to the staging area.
+git commit -m "message": Commit changes with a message.
+git pull: Fetch and merge changes from the remote repository.
+git push: Push changes to the remote repository.
+git branch: List, create, or delete branches.
+git checkout [branch]: Switch branches or restore files.
+git merge [branch]: Merge changes from one branch into another.
+Branching and Merging:
+
+Creating Branches: git branch [branch-name]
+Switching Branches: git checkout [branch-name]
+Deleting Branches: git branch -d [branch-name]
+Merging Branches: git merge [branch-name]
+Conflict Resolution:
+
+Explain how to handle merge conflicts and resolve them using Git.
+Rebasing:
+
+Basic commands and usage: git rebase [branch]
+Stashing Changes:
+
+git stash: Save changes temporarily.
+git stash apply: Reapply stashed changes.
+Viewing History:
+
+git log: View commit history.
+git diff: Show changes between commits or the working directory.
+Tagging:
+
+git tag [tag-name]: Create a tag.
+git tag -d [tag-name]: Delete a tag.
+Undoing Changes:
+
+git reset [file]: Unstage a file.
+git revert [commit]: Revert a commit.
+git checkout -- [file]: Discard changes in the working directory.
+Git Configurations:
+
+Setting up global configuration: git config --global user.name "Name"
+git config --global user.email "email@example.com"
+Collaborative Workflows:
+
+Forking and Pull Requests (if using platforms like GitHub or GitLab).
+Git Aliases:
+
+Creating shortcuts for common commands: git config --global alias.co checkout
+Git Hooks:
+
+Basic overview of hooks like pre-commit and post-commit for custom automation.
+Useful Tools and Integrations:
+
+Mention tools like Git GUIs (e.g., GitKraken, Sourcetree) and integrations with IDEs.
