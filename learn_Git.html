@@ -7,7 +7,7 @@
     <title>Learn Git</title>
     <style>
         body {
-            font-family: Comic Sans, cursive;
+            font-family: Comic Sans MS, cursive;
             /* Comic Sans as primary, fallback to cursive */
             text-align: center;
             margin: 50px auto;
@@ -15,8 +15,13 @@
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
 
         ol {
@@ -25,60 +30,98 @@
         }
 
         li {
-            margin-bottom: 10px;
-            line-height: 1.5;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.8;
         }
 
-        /* Optional: Add code for interactive elements or visual aids */
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Learn Git - A Step-by-Step Guide</h1>
 
-     <p>This guide will walk you through the process of learning Git, from installation to committing your changes.</p>
+    <p>This guide will teach you the basics of Git, from installation to committing changes and more.</p>
+
     <ol>
-        <li>**Installation:** Download and install Git for your operating system. You can find official installers on
-            the Git SCM website: https://git-scm.com/downloads</li>
-        <li>**Basic Configuration:** Open a terminal window and run the following commands to set your username and
-            email address (replace with your details):<br>
-            ```bash
-            git config --global user.name "Your Name"
-            git config --global user.email "[email address removed]"
-            ```
+        <li><strong>Install Git:</strong> Download and install Git for your operating system. Visit the official Git website: 
+            <a href="https://git-scm.com/downloads" target="_blank">Git SCM Downloads</a>.
         </li>
-        <li>**Creating a Repository:** Navigate to your project directory in the terminal and initialize a new Git
-            repository using the command:<br>
-            ```bash
-            git init
-            ```
-            This creates a hidden folder called ".git" which stores all Git-related information.
+
+        <li><strong>Basic Configuration:</strong> After installation, open a terminal and set up your username and email address by running these commands:
+            <pre><code>
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+            </code></pre>
+            These settings ensure your commits are linked to your identity.
         </li>
-        <li>**Adding Files:** Use the `git add` command followed by the filename(s) to stage them for version control.
-            Example:<br>
-            ```bash
-            git add index.html styles.css
-            ```
-            You can also use wildcards like `git add *` to add all untracked files in the current directory.
+
+        <li><strong>Initialize a Git Repository:</strong> Navigate to your project folder in the terminal and initialize a Git repository by running:
+            <pre><code>git init</code></pre>
+            This command creates a hidden `.git` folder where Git will store all your project’s version history.
         </li>
-        <li>**Committing Changes:** Once you've added files, create a snapshot of the current state with a commit
-            message using `git commit -m "Your commit message"`. The message describes the changes you made.
+
+        <li><strong>Check Repository Status:</strong> To view the current state of your repository and track changes, use:
+            <pre><code>git status</code></pre>
         </li>
-        <li>**Understanding the Working Directory, Staging Area, and Repository:** These are key Git concepts. The
-            working directory is where your project files reside. The staging area holds files prepared for the next
-            commit. The repository stores all historical versions of your project.
+
+        <li><strong>Stage Files for Commit:</strong> Add files to the staging area to prepare them for committing. You can add specific files or all changed files:
+            <pre><code>git add filename</code>
+<code>git add .</code> <!-- Adds all files in the directory -->
+            </pre>
         </li>
-        <li>**Exploring Git Commands:** Learn essential commands like `git status`, `git log`, `git diff`, `git
-            checkout`, and `git branch` to manage your repository, view commit history, compare changes, and work on
-            different versions (branches).
+
+        <li><strong>Commit Your Changes:</strong> After staging your files, commit them with a meaningful message:
+            <pre><code>git commit -m "Describe your changes"</code></pre>
+            This saves a snapshot of your changes.
         </li>
-        <li>**Remote Repositories (Optional):** Connect your local repository to a remote hosting service like GitHub or
-            GitLab. This allows collaboration and version control across teams. There are additional steps involved for
-            setting this up.
+
+        <li><strong>View Commit History:</strong> To see a list of previous commits, run:
+            <pre><code>git log</code></pre>
         </li>
-        <li>**Practice and Learn More:** The best way to learn Git is by practicing! Start with small projects and
-            gradually explore advanced features. Resources like the official Git documentation and interactive tutorials
-            can be helpful: https://git-scm.com/doc</li>
+
+        <li><strong>Create a New Branch:</strong> To work on a new feature or fix a bug without affecting the main codebase, create a new branch:
+            <pre><code>git branch new-feature</code></pre>
+        </li>
+
+        <li><strong>Switch Between Branches:</strong> To move between branches, use:
+            <pre><code>git checkout branch-name</code></pre>
+        </li>
+
+        <li><strong>Merge Branches:</strong> After completing your changes in a branch, merge them back into the main branch:
+            <pre><code>git merge branch-name</code></pre>
+        </li>
+
+        <li><strong>Push Changes to a Remote Repository:</strong> After committing changes locally, push them to a remote repository (e.g., GitHub or GitLab):
+            <pre><code>git push origin branch-name</code></pre>
+            For the first time, or to set up tracking for a new branch, use:
+            <pre><code>git push -u origin branch-name</code></pre>
+        </li>
+
+        <li><strong>Pull Changes from Remote Repository:</strong> To update your local repository with the latest changes from a remote one, use:
+            <pre><code>git pull</code></pre>
+        </li>
+
+        <li><strong>Undo Local Changes:</strong> If you want to discard changes you’ve made in the working directory, run:
+            <pre><code>git checkout -- filename</code></pre>
+        </li>
+
+        <li><strong>Unstage Changes:</strong> To unstage a file without losing its changes, use:
+            <pre><code>git reset filename</code></pre>
+        </li>
+
+        <li><strong>Remove Files from Git:</strong> If you want to stop tracking a file but keep it in your local directory, use:
+            <pre><code>git rm --cached filename</code></pre>
+        </li>
+
+        <li><strong>Keep Learning:</strong> The best way to get comfortable with Git is to keep practicing. Start with small projects and explore advanced features like `git diff`, `git fetch`, and more. 
+            For additional resources, visit the <a href="https://git-scm.com/doc" target="_blank">Git documentation</a>.
+        </li>
     </ol>
 </body>
 
