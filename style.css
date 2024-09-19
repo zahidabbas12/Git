@@ -1,33 +1,118 @@
 body {
     font-family: Comic Sans MS, cursive;
-    text-align: center;
     margin: 50px auto;
-    max-width: 800px;
+    max-width: 90%; /* Adjusted max-width for smaller screens */
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2em; /* Reduced font size for better fit on smaller screens */
+    margin-bottom: 15px;
+    text-align: center; /* Center-align only the heading */
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1.1em; /* Slightly smaller font size for better fit */
+    line-height: 1.5;
+    text-align: left; /* Ensure other text is left-aligned */
+    margin: 0; /* Remove default margin */
+    padding: 0 10px; /* Adjusted padding for smaller screens */
 }
 
 ol {
     list-style: decimal;
-    padding-left: 20px;
+    padding-left: 20px; /* Reduced padding for smaller screens */
 }
 
 li {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    line-height: 1.8;
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+    font-size: 1em; /* Slightly smaller font size for better fit */
+    line-height: 1.6;
+    padding-left: 10px; /* Reduced padding for smaller screens */
 }
 
 code {
-    background-color: #f4f4f4;
+    background-color: #b9b9b9;
     padding: 2px 5px;
-    border-radius: 3px;
+    border-radius: 4px;
+    display: block; /* Ensure each code block is on its own line */
+    margin-left: 20px; /* Adjusted margin for smaller screens */
+    margin-right: 20px; /* Adjusted margin for smaller screens */
+    padding-left: 10px; /* Adjusted padding for smaller screens */
 }
+
+/* Additional CSS for .reference-note */
+.reference-note {
+    color: rgb(216, 115, 115); /* Light red color for the text */
+    border: 2px solid #b40808; /* Red border */
+    padding: 10px; /* Add some padding */
+    margin: 10px auto; /* Center the note horizontally with auto margins */
+    border-radius: 5px; /* Optional: rounded corners */
+    list-style: none; /* Remove default bullet points */
+    display: inline-block; /* Fit to the width of its content */
+}
+
+.reference-note li {
+    margin-bottom: 5px; /* Add space between list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        margin: 20px auto;
+        max-width: 95%; /* Increase max-width for very small screens */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Smaller font size for smaller screens */
+    }
+
+    p {
+        font-size: 1em; /* Smaller font size for better readability */
+        padding: 0 5px; /* Further reduced padding */
+    }
+
+    ol {
+        padding-left: 10px; /* Reduced padding for smaller screens */
+    }
+
+    li {
+        font-size: 0.9em; /* Smaller font size for better fit */
+    }
+
+    code {
+        margin-left: 10px; /* Adjusted margin for very small screens */
+        margin-right: 10px; /* Adjusted margin for very small screens */
+        padding-left: 5px; /* Reduced padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px auto;
+        max-width: 100%; /* Full-width on very small screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Further reduced font size for very small screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller font size for readability on small screens */
+        padding: 0 2px; /* Minimal padding for very small screens */
+    }
+
+    ol {
+        padding-left: 5px; /* Minimal padding for very small screens */
+    }
+
+    li {
+        font-size: 0.8em; /* Even smaller font size for very small screens */
+    }
+
+    code {
+        margin-left: 5px; /* Minimal margin for very small screens */
+        margin-right: 5px; /* Minimal margin for very small screens */
+        padding-left: 2px; /* Minimal padding for very small screens */
+    }
+}
+
