@@ -14,7 +14,7 @@ This repository is a comprehensive collection of Git commands, tips, and techniq
 
 ## Purpose
 
-The goal of this repository is to provide a centralized resource for learning and mastering Git. Whether you are a beginner or an experienced developer, you'll find valuable information and examples to improve your Git workflow and version control skills.
+The goal of this repository is to provide a centralized resource for learning Git. You'll find valuable information and examples to improve your Git workflow and version control skills.
 
 ## Getting Started
 
